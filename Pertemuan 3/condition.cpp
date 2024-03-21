@@ -31,10 +31,43 @@ int main()
     }
     else if (nilai > 65)
     {
-        cout << "Lulus";
+        cout << "Lulus" << endl;
     }
     else
     {
-        cout << "Lulus dengan KKM";
+        cout << "Lulus dengan KKM" << endl;
     }
+
+    // Switch-Case Statement
+    switch (nilai)
+    {
+    case 90 ... 100:
+        cout << "A" << endl;
+        break;
+    case 85 ... 89:
+        cout << "B+" << endl;
+        break;
+    case 80 ... 84:
+        cout << "B" << endl;
+        break;
+    case 75 ... 79:
+        cout << "C+" << endl;
+        break;
+    case 70 ... 74:
+        cout << "C" << endl;
+        break;
+    case 65 ... 69:
+        cout << "B" << endl;
+        break;
+    case 0 ... 64:
+        cout << "B" << endl;
+        break;
+    default:
+        cout << "Tidak Valid";
+        break;
+    }
+
+    // Ternary Operator
+    string tipe = (nilai > 0) ? "Positif" : "Negatif";
+    cout << tipe << endl;
 }

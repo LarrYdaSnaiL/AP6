@@ -21,4 +21,6 @@ int main()
 
     string bilangan = ((angka % 2) == 0) ? "Bilangan Genap" : "Bilangan Ganjil";
     cout << bilangan << endl;
+
+    return 0;
 }
